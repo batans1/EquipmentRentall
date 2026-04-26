@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "EquipmentRental.Business": {
+      "commandName": "Project"
+    },
+    "Profil \"1\"": {
+      "commandName": "Executable",
+      "executablePath": "H:\\EquipmentRental\\EquipmentRental.Web\\EquipmentRental.Web.csproj"
+    }
+  }
+}

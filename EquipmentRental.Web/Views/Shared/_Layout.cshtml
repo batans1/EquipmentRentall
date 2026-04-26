@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Equipment Rental</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/EquipmentRental.Web.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm app-nav mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-semibold" asp-area="" asp-controller="Home" asp-action="Index">Equipment Rental</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item"><a class="nav-link text-dark" asp-controller="Equipment" asp-action="Index">Оборудване</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" asp-controller="RentalRequests" asp-action="Create">Нова заявка</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" asp-controller="RentalRequests" asp-action="My">Моите заявки</a></li>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Home" asp-action="Admin">Админ панел</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" asp-controller="Users" asp-action="Index">Потребители</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" asp-controller="RentalRequests" asp-action="All">Всички заявки</a></li>
+                            }
+                        </ul>
+                        <form asp-controller="Account" asp-action="Logout" method="post">
+                            <button class="btn btn-outline-dark" type="submit">Изход</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item"><a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Вход</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Регистрация</a></li>
+                        </ul>
+                    }
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="page-shell">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted">
+        <div class="container">
+            Equipment Rental
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

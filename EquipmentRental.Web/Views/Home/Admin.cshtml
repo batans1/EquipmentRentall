@@ -1,0 +1,12 @@
+@model AdminDashboardVm
+@{
+    ViewData["Title"] = "Админ панел";
+}
+
+<h2>Административно табло</h2>
+<div class="row g-3">
+    <div class="col-md-3"><div class="card p-3"><h5>Потребители</h5><div>@Model.UsersCount</div></div></div>
+    <div class="col-md-3"><div class="card p-3"><h5>Оборудване</h5><div>@Model.EquipmentCount</div></div></div>
+    <div class="col-md-3"><div class="card p-3"><h5>Заявки</h5><div>@Model.RequestsCount</div></div></div>
+    <div class="col-md-3"><div class="card p-3"><h5>В изчакване</h5><div>@Model.PendingRequestsCount</div></div></div>
+</div>

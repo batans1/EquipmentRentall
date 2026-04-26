@@ -1,0 +1,42 @@
+@model List<RentalRequest>
+@using EquipmentRental.Web.Extensions
+@{
+    ViewData["Title"] = "Всички заявки";
+}
+<h2>Всички заявки</h2>
+<div class="table-wrap">
+<table class="table table-bordered mb-0">
+    <thead><tr><th>Потребител</th><th>Период</th><th>Цел</th><th>Статус</th><th>Артикули</th><th>Промени статус</th></tr></thead>
+    <tbody>
+    @foreach (var req in Model)
+    {
+        <tr>
+            <td>@req.User?.FirstName @req.User?.LastName (@req.User?.Username)</td>
+            <td>@req.StartDate - @req.EndDate</td>
+            <td>@req.Purpose</td>
+            <td>@req.Status.GetDisplayName()</td>
+
+            <td>
+                @foreach (var item in req.RentalRequestItems)
+                {
+                    <div class="item-line">
+                        <img src="@item.EquipmentItem!.ImageUrl" alt="@item.EquipmentItem!.Name" class="eq-thumb-sm" />
+                        <span>@item.EquipmentItem!.Name - @item.Quantity бр.</span>
+                    </div>
+                }
+            </td>
+            <td>
+                <form asp-action="Status" asp-route-id="@req.Id" method="post" class="d-flex gap-2">
+                    <select name="status" class="form-select form-select-sm">
+                        <option value="@RentalRequestStatus.Pending">В изчакване</option>
+                        <option value="@RentalRequestStatus.Approved">Одобрена</option>
+                        <option value="@RentalRequestStatus.Rejected">Отказана</option>
+                    </select>
+                    <button class="btn btn-sm btn-primary">Запази</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>

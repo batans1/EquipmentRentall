@@ -1,0 +1,15 @@
+H:\EquipmentRental\EquipmentRental.Business\bin\Debug\net10.0\EquipmentRental.Business.deps.json
+H:\EquipmentRental\EquipmentRental.Business\bin\Debug\net10.0\EquipmentRental.Business.dll
+H:\EquipmentRental\EquipmentRental.Business\bin\Debug\net10.0\EquipmentRental.Business.pdb
+H:\EquipmentRental\EquipmentRental.Business\bin\Debug\net10.0\EquipmentRental.Data.dll
+H:\EquipmentRental\EquipmentRental.Business\bin\Debug\net10.0\EquipmentRental.Data.pdb
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\EquipmentRental.Business.csproj.AssemblyReference.cache
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\EquipmentRental.Business.GeneratedMSBuildEditorConfig.editorconfig
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\EquipmentRental.Business.AssemblyInfoInputs.cache
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\EquipmentRental.Business.AssemblyInfo.cs
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\EquipmentRental.Business.csproj.CoreCompileInputs.cache
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\Equipmen.FAFACC90.Up2Date
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\EquipmentRental.Business.dll
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\refint\EquipmentRental.Business.dll
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\EquipmentRental.Business.pdb
+H:\EquipmentRental\EquipmentRental.Business\obj\Debug\net10.0\ref\EquipmentRental.Business.dll

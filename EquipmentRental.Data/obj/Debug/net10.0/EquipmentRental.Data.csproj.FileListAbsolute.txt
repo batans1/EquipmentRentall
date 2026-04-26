@@ -1,0 +1,14 @@
+H:\EquipmentRental\EquipmentRental.Data\bin\Debug\net10.0\EquipmentRental.Data.deps.json
+H:\EquipmentRental\EquipmentRental.Data\bin\Debug\net10.0\EquipmentRental.Data.runtimeconfig.json
+H:\EquipmentRental\EquipmentRental.Data\bin\Debug\net10.0\EquipmentRental.Data.dll
+H:\EquipmentRental\EquipmentRental.Data\bin\Debug\net10.0\EquipmentRental.Data.pdb
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\EquipmentRental.Data.csproj.AssemblyReference.cache
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\EquipmentRental.Data.GeneratedMSBuildEditorConfig.editorconfig
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\EquipmentRental.Data.AssemblyInfoInputs.cache
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\EquipmentRental.Data.AssemblyInfo.cs
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\EquipmentRental.Data.csproj.CoreCompileInputs.cache
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\EquipmentRental.Data.dll
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\refint\EquipmentRental.Data.dll
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\EquipmentRental.Data.pdb
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\EquipmentRental.Data.genruntimeconfig.cache
+H:\EquipmentRental\EquipmentRental.Data\obj\Debug\net10.0\ref\EquipmentRental.Data.dll

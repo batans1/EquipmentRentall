@@ -1,0 +1,38 @@
+@model List<RentalRequest>
+@using EquipmentRental.Web.Extensions
+@{
+    ViewData["Title"] = "Моите заявки";
+}
+<h2>Моите заявки</h2>
+<div class="table-wrap">
+<table class="table table-bordered mb-0">
+    <thead><tr><th>Период</th><th>Цел</th><th>Статус</th><th>Артикули</th><th>Действие</th></tr></thead>
+    <tbody>
+    @foreach (var req in Model)
+    {
+        <tr>
+            <td>@req.StartDate - @req.EndDate</td>
+            <td>@req.Purpose</td>
+            
+
+                    <td>@req.Status.GetDisplayName()</td>
+            <td>
+                @foreach (var item in req.RentalRequestItems)
+                {
+                    <div class="item-line">
+                        <img src="@item.EquipmentItem!.ImageUrl" alt="@item.EquipmentItem!.Name" class="eq-thumb-sm" />
+                        <span>@item.EquipmentItem!.Name - @item.Quantity бр.</span>
+                    </div>
+                }
+            </td>
+            <td>
+                @if (req.Status == RentalRequestStatus.Pending)
+                {
+                    <form asp-action="Delete" asp-route-id="@req.Id" method="post"><button class="btn btn-sm btn-danger">Изтрий</button></form>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>

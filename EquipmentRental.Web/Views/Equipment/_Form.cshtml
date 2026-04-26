@@ -1,0 +1,9 @@
+@model EquipmentItem
+<form method="post">
+    <div class="mb-3"><label asp-for="Name"></label><input asp-for="Name" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="Description"></label><input asp-for="Description" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="AvailableQuantity"></label><input asp-for="AvailableQuantity" type="number" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="ImageUrl"></label><input asp-for="ImageUrl" class="form-control" /></div>
+    <div class="mb-3"><label asp-for="Condition"></label><select asp-for="Condition" asp-items="Html.GetEnumSelectList<EquipmentCondition>()" class="form-control"></select></div>
+    <button class="btn btn-primary" type="submit">Запази</button>
+</form>

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="EquipmentRental.Business/EquipmentRental.Business.csproj" />
+  <Project Path="EquipmentRental.Data/EquipmentRental.Data.csproj" />
+  <Project Path="EquipmentRental.Web/EquipmentRental.Web.csproj" />
+</Solution>
