@@ -3,6 +3,7 @@ using System.Text;
 
 namespace EquipmentRental.Data;
 
+// базов клас за хеширане на пароли
 public static class PasswordHasher
 {
     public static string Hash(string password)

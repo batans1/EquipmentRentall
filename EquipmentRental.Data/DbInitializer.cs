@@ -47,7 +47,7 @@ public static class DbInitializer
                 Description = "DSLR camera",
                 AvailableQuantity = 3,
                 ImageUrl = "https://cdn.mos.cms.futurecdn.net/QmY5fRUXJEtnzhTgXLSY5A-1200-80.jpg",
-                Condition = EquipmentCondition.New
+                Condition = EquipmentCondition.ForRepair
             });
 
         await db.SaveChangesAsync();

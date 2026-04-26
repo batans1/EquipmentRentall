@@ -64,6 +64,7 @@ public class EquipmentItem
     public ICollection<RentalRequestItem> RentalRequestItems { get; set; } = new List<RentalRequestItem>();
 }
 
+// Статус на заявката за наем на български
 public enum RentalRequestStatus
 {
     [Display(Name = "В изчакване")]
